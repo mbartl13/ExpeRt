@@ -1,0 +1,9 @@
+files <- dir()
+rdata_files <- files[grepl(".RData", files)]
+rdata_files
+
+for (fname in rdata_files) {
+ obj_names <- load(fname)
+ cat(fname, "\n")
+ print(obj_names[grepl("^max", obj_names)])
+}
