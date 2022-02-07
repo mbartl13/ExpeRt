@@ -1,0 +1,3 @@
+[R] load only one object from a .RData file
+value <- loadToEnv("file.RData")[["object"]]
+
