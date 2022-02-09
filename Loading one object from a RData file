@@ -1,3 +1,7 @@
 [R] load only one object from a .RData file
 value <- loadToEnv("file.RData")[["object"]]
 
+OR
+remotes::install_github("tshmak/Tmisc")
+library("Tmisc")
+object<-extract.from.RData(file, object)
