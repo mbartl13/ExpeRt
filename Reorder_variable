@@ -1,0 +1,2 @@
+object$variable <- factor(object$variable,
+                               levels = c("1", "2", "3","4"))
